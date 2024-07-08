@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- links or cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- local files -->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="position-fixed top-0 start-0 end-0 z-3" >
+            <!-- onscroll="$('header').css('backgroundColor','white')" -->
+            <div class="container" >
+                <div class="row  ">
+                    <div class="d-flex justify-content-between mt-3">                       
+                    
+                    <!-- Logo container -->
+                    <a class="logo mt-1 " href="index.html">
+                        <img src="imgs/logo-white.png" class="logo-light-mode d-none" alt="">
+                        <img src="imgs/logo-dark.png" class="logo-dark-mode" alt="">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Start navbar Toggle-->
+                    <div class="menu-extras d-none ">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span>akoko</span>
+                                    <span>akoko</span>
+                                    <span>akoko</span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+                    <!-- End navbar Toggle-->
+            
+                    <div class="d-flex justify-content-evenly">
+                            <!-- Navigation Menu-->   
+                            <ul class="list-unstyled d-flex justify-content-center mt-2" id="navmenu-nav">
+                                <li class="has-submenu active">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#feature">Features</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#pricing">Pricing</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#blog">Blog &amp; News</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#contact">Contact Us</a>
+                                </li>
+                            </ul><!--end navigation menu-->
+                        <!--end navigation-->
+    
+    
+                        <!--Login button Start-->
+                        <ul class="buy-button list-inline">
+                            <li class="list-inline-item mt-1">
+                                <a href="" class="btn   rounded-pill">Login</a>
+                            </li>
+                        </ul>
+                        <!--Login button End-->
+                    </div>
+                    </div>
+                </div>
+
+            </div><!--end container-->
+        </header>
+        <!--end header-->
+        <!-- Navbar End -->        
+
+        <main>
+        <!-- Start section image and the h1 grow your business-->
+        <section class=" d-table w-100 " id="home">
+            <div class="container ">
+                <div class="row align-items-center  ">
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="title-heading  ">
+                            <h1 class="heading fw-semibold">Grow Your Business <br> with 
+                                <span class="position-relative">Digital <span class="typewrite" data-period="2000" data-type="[ &quot;Marketing&quot;, &quot;Services&quot;, &quot;Business&quot;, &quot;Solutions&quot;]"><span id="element">Market</span></span>
+                                    <img src="imgs/shape2.png" class="position-absolute top-0 start-0  h-50 z-n1 image-decoration" alt="">
+                                </span>
+                            </h1>
+                            <p class="para-desc text-muted mt-4  mb-0">We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+
+                            <div class="mt-4 pt-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-pills btn-primary rounded-pill d-flex align-items-center text-start ">Contact Us  <i class="fa-solid fa-chevron-right " style="color: #ffffff;"></i></a>
+                                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="btn rounded-circle btn-sm btn-primary ms-2 p-2 pt-1 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video fea icon-sm"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></a>
+                                <span class="fw-normal align-middle ms-2">Watch Now</span>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <!-- image boy with rocket -->
+                    <div class="col-lg-5 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                        <div class="position-relative">
+                            <img src="imgs/man-riding-a-rocket.svg" class="img-fluid" alt="small image ">
+
+                            <div class="position-absolute top-0 start-50">
+                                <p class="bg-primary rounded-3 mb-0 spin-div" style="opacity: 0.1;"></p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <!-- start div statistics -->
+            <div class="container mt-100">
+                <div class="row sec-statistics-bg">
+                    <div class="col-12">
+                        <div class="p-4 bg-soft-primary rounded-3">
+                            <div class="row">
+                                <div class="col-4 py-3">
+                                    <div class="counter-box text-center">
+                                        <h2 class="mb-0 text-dark fw-semibold"><span class="counter-value" data-target="1548">1548</span>+</h2>
+                                        <h6 class="counter-head text-muted fw-medium mb-0">Happy Clients</h6>
+                                    </div><!--end counter box-->
+                                </div><!--end col-->
+            
+                                <div class="col-4 py-3">
+                                    <div class="counter-box text-center">
+                                        <h2 class="mb-0 text-dark fw-semibold"><span class="counter-value" data-target="25">25</span>+</h2>
+                                        <h6 class="counter-head text-muted fw-medium mb-0">Project Completed</h6>
+                                    </div><!--end counter box-->
+                                </div><!--end col-->
+            
+                                <div class="col-4 py-3">
+                                    <div class="counter-box text-center">
+                                        <h2 class="mb-0 text-dark fw-semibold"><span class="counter-value" data-target="99">99</span>%</h2>
+                                        <h6 class="counter-head text-muted fw-medium mb-0">Client Satisfaction</h6>
+                                    </div><!--end counter box-->
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start div statistics -->
+
+        </section><!--end section-->
+        <!-- end section image and the h1 grow your business-->
+
+
+        <!-- start section cards and carousel -->
+        <section class="section  pt-100" id="feature">
+            <div class="container">
+                <div class="row align-items-center mb-4 pb-2">
+                    <div class="col-lg-6">
+                        <div class="section-title text-md-start">
+                            <h4 class="title mb-4 mb-lg-0">Take the lead in modern <br> social media marketing</h4>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-6">
+                        <div class="text-md-start">
+                            <p class="text-muted mb-0 para-desc">We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="services theStaticCard primary active-service position-relative overflow-hidden  p-4 rounded-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-aperture fea icon-lg service-icon text-white"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                            
+                            <div class="content mt-3">
+                                <h5 class="title text-white">User Friendly</h5>
+                                <p class=" para1">We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+                                
+                                <a href="" class="text-primary link1 text-decoration-none text-white">Learn More  
+                                    <i class="fa-solid fa-chevron-right " style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-aperture service-big-icon position-absolute bottom-0 end-0 opacity-0 "><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="services theCard position-relative overflow-hidden bg-white p-4 rounded-3 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send fea icon-lg service-icon"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            
+                            <div class="content mt-3">
+                                <h5 class="title">Super Fast</h5>
+                                <p class=" para">We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+                                
+                                <a href="#" class="text-primary link text-decoration-none">Learn More <i class="fa-solid fa-chevron-right " ></i></a>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pe-2 feather feather-send service-big-icon position-absolute bottom-0 end-0 opacity-0 "><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="services theCard position-relative overflow-hidden bg-white p-4 rounded-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users fea icon-lg service-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            
+                            <div class="content mt-3">
+                                <h5 class="title">User Forum</h5>
+                                <p class=" para">We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+                                
+                                <a href="" class="text-primary link text-decoration-none ">Learn More <i class="fa-solid fa-chevron-right " ></i></a>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pe-2 feather feather-users service-big-icon position-absolute bottom-0 end-0 opacity-0 "><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 ">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="position-relative">
+                            <img src="imgs/idea-launch.svg" class="img-fluid" alt="image">
+
+                            <div class="modern-app-round round-small"></div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="section-title ms-lg-5">
+                            <h4 class="title mb-3">Strategic SEO Optimization <br> Elevates Your Brand Presence.</h4>
+                            <p class="text-muted para-desc mb-0">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                        
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Our Talented &amp; Experienced Marketing Agency</li>
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Create your own skin to match your brand</li>
+                            </ul>
+
+                            <div class="mt-4">
+                                <a href="aboutus.html" class="btn btn-pills btn-primary rounded-pill ">About Us <i class="bi bi-arrow-right-short "></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6 col-md-6 order-1 order-md-2">
+                        <div class="position-relative">
+                            <img src="imgs/home-office.svg" class="img-fluid" alt="image">
+
+                            <div class="modern-app-round round-small"></div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 order-md-1 order-2">
+                        <div class="section-title me-lg-5">
+                            <h4 class="title mb-3">Precision-Driven SEO <br> Fuels Business Success.</h4>
+                            <p class="text-muted para-desc mb-0">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                        
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Our Talented &amp; Experienced Marketing Agency</li>
+                                <li class="mb-2"><span class="text-primary h5 me-2"><i class="fa-regular fa-circle-check fa-xs"></i></span>Create your own skin to match your brand</li>
+                            </ul>
+
+                            <div class="mt-4">
+                                <a href="aboutus.html" class="btn btn-pills btn-primary rounded-pill">About Us <i class="bi bi-arrow-right-short "></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60 ">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="position-relative">
+                            <img src="imgs/success.svg" class="img-fluid" alt="">
+
+                            <div class="modern-app-round round-small"></div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                        <div class="section-title">
+                            <h4 class="title mb-3">Customer's Review</h4>
+                            <p class="text-muted para-desc mb-0">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                        </div>
+
+                        <div class="row mt-4 pt-2 ">
+                            <div class="col-12">
+                                <div class=" owl-carousel owl-theme">
+                                    
+                                    <div class=" item"  >
+                                        <div class="position-relative  overflow-hidden bg-white rounded-3 p-4 m-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="mb-0">Creativity</h6>
+
+                                                <ul class="list-unstyled mb-0 text-warning">
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="text-muted fst-italic mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
+
+                                            <div class="d-flex align-items-center">
+                                                <img src="imgs/1 (1).jpg" class="avatar avatar-small rounded-pill " alt="..." />
+                                                <div class="ms-2">
+                                                    <h6 class="text-dark small mb-0">Calvin Carlo</h6>
+                                                    <small class="text-muted d-block">Manager</small>
+                                                </div>
+                                            </div>
+
+                                            <i class="bi bi-quote display-1 text-primary opacity-25 position-absolute end-0 bottom-0"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class=" item"  >
+                                        <div class="position-relative  overflow-hidden bg-white rounded-3 shadow p-4 m-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="mb-0">Modern</h6>
+
+                                                <ul class="list-unstyled mb-0 text-warning">
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="text-muted fst-italic mt-2">" I didn't know a thing about icon design until I read this book. Now I can create any icon I need in no time. Great resource! "</p>
+
+                                            <div class="d-flex align-items-center">
+                                                <img src="imgs/2 (1).jpg" class="avatar avatar-small h-auto rounded-pill shadow" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-dark small mb-0">Carl Oliver</h6>
+                                                    <small class="text-muted d-block">Manager</small>
+                                                </div>
+                                            </div>
+
+                                            <i class="bi bi-quote display-1 text-primary opacity-25 position-absolute end-0 bottom-0"></i>                                        </div>
+                                    </div>
+
+                                    <div class=" item" >
+                                        <div class="position-relative  overflow-hidden bg-white rounded-3 shadow p-4 m-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="mb-0">Social Marketing</h6>
+
+                                                <ul class="list-unstyled mb-0 text-warning">
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="text-muted fst-italic mt-2">" The best part about Flipup is every time I pay my employees, my bank balance doesn't go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined. "</p>
+
+                                            <div class="d-flex align-items-center">
+                                                <img src="imgs/3 (1).jpg" class="avatar avatar-small h-auto rounded-pill shadow" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-dark small mb-0">Barbara McIntosh</h6>
+                                                    <small class="text-muted d-block">Manager</small>
+                                                </div>
+                                            </div>
+
+                                            <i class="bi bi-quote display-1 text-primary opacity-25 position-absolute end-0 bottom-0"></i>                                        </div>
+                                    </div>
+
+                                    <div class=" item"  >
+                                        <div class="position-relative  overflow-hidden bg-white rounded-3 shadow p-4 m-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="mb-0">Digital Marketing</h6>
+
+                                                <ul class="list-unstyled mb-0 text-warning">
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="text-muted fst-italic mt-2">" I used to have to remit tax to the EU and with Flipup I somehow don't have to do that anymore. Nervous to travel there now though. "</p>
+
+                                            <div class="d-flex align-items-center">
+                                                <img src="imgs/4.jpg" class="avatar avatar-small h-auto rounded-pill shadow" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-dark small mb-0">Janisha Doll</h6>
+                                                    <small class="text-muted d-block">Manager</small>
+                                                </div>
+                                            </div>
+
+                                            <i class="bi bi-quote display-1 text-primary opacity-25 position-absolute end-0 bottom-0"></i>                                        </div>
+                                    </div>
+
+                                    <div class=" item"  >
+                                        <div class="position-relative  overflow-hidden bg-white rounded-3 shadow p-4 m-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="mb-0">SEO</h6>
+
+                                                <ul class="list-unstyled mb-0 text-warning">
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                </ul>
+                                            </div>
+
+                                            <p class="text-muted fst-italic mt-2">" There are so many things I had to do with my old software that I just don't do at all with Flipup. Suspicious but I can't say I don't love it. "</p>
+
+                                            <div class="d-flex align-items-center">
+                                                <img src="imgs/5.jpg" class="avatar avatar-small h-auto rounded-pill shadow" alt="">
+                                                <div class="ms-2">
+                                                    <h6 class="text-dark small mb-0">Esther Howard</h6>
+                                                    <small class="text-muted d-block">Manager</small>
+                                                </div>
+                                            </div>
+
+                                            <i class="bi bi-quote display-1 text-primary opacity-25 position-absolute end-0 bottom-0"></i>                                        </div>
+                                    </div>
+                                </div></div></div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- end section cards and carousel -->
+
+
+
+
+        <!-- start section plans and pricing -->
+        <section class="section bg-light mt-100 py-100 " id="pricing">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-3">Pricing Plans</h4>
+                            <p class=" para-desc mx-auto mb-0">We've cultivated a dynamic space where creativity seamlessly intertwines with  strategy and innovation.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="pricing bg-white text-center rounded-3 position-relative overflow-hidden ">
+                            <div class="price-header rounded-top p-4">
+                                <img src="imgs/idea-launch.svg" class="avatar avatar-xl-large" alt="">
+                                <h5 class="mt-3">Starter</h5>
+                                <p class="mb-0 text-muted">Suitable for Starter</p>
+
+                                <ul class="nav nav-pills rounded-pill border-0 justify-content-center d-inline-block border py-1 px-2 mt-3 mb-0" id="StarterTab" role="tablist">
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small active" id="Starter-month-tab" data-bs-toggle="tab" data-bs-target="#Starter-month-tab-pane" type="button" role="tab" aria-controls="Starter-month-tab-pane" aria-selected="true" fdprocessedid="ky1g9e">Monthly</button>
+                                    </li>
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small" id="Starter-year-tab" data-bs-toggle="tab" data-bs-target="#Starter-year-tab-pane" type="button" role="tab" aria-controls="Starter-year-tab-pane" aria-selected="false" fdprocessedid="hw5h6q" tabindex="-1">Yearly</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content bg-light p-4" id="StarterTabContent">
+                                <div class="tab-pane fade show active" id="Starter-month-tab-pane" role="tabpanel" aria-labelledby="Starter-month-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">0.99</span>
+                                        <span class="h5 align-self-end mb-1">/Month</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Starter-year-tab-pane" role="tabpanel" aria-labelledby="Starter-year-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">4.99</span>
+                                        <span class="h5 align-self-end mb-1">/Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-features text-start">
+                                <ul class="feature list-unstyled p-4 mb-0">
+                                    <li class="feature-list text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Full Access</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Enhanced Security</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Source Files</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>1 Domain Free</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Appointments</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Installment</li>
+                                </ul>
+                                <div class="p-4">
+                                    <a href="#" class="btn btn-pills rounded-pill btn-dark">Free Signup</a>                                        
+                                </div>
+                            </div>    
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="pricing bg-white text-center rounded-3 position-relative overflow-hidden " id="with-banar" >
+                            <span class="text-center d-block  small fw-medium py-1 text-white" id="banar" >Best for your Team</span>
+                            <div class="price-header rounded-top p-4">
+                                <img src="imgs/team-idea.svg" class="avatar avatar-xl-large" alt="">
+                                <h5 class="mt-3">Standerd</h5>
+                                <p class="mb-0 text-muted">Suitable for Team</p>
+
+                                <ul class="nav nav-pills rounded-pill border-0 justify-content-center d-inline-block border py-1 px-2 mt-3 mb-0" id="StanderdTab" role="tablist">
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small active" id="Standerd-month-tab" data-bs-toggle="tab" data-bs-target="#Standerd-month-tab-pane" type="button" role="tab" aria-controls="Standerd-month-tab-pane" aria-selected="true" fdprocessedid="iu9z4">Monthly</button>
+                                    </li>
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small" id="Standerd-year-tab" data-bs-toggle="tab" data-bs-target="#Standerd-year-tab-pane" type="button" role="tab" aria-controls="Standerd-year-tab-pane" aria-selected="false" fdprocessedid="4abe7k" tabindex="-1">Yearly</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content bg-light  p-4" id="StanderdTabContent">
+                                <div class="tab-pane fade show active" id="Standerd-month-tab-pane" role="tabpanel" aria-labelledby="Standerd-month-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">19.99</span>
+                                        <span class="h5 align-self-end mb-1">/Month</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Standerd-year-tab-pane" role="tabpanel" aria-labelledby="Standerd-year-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">199.99</span>
+                                        <span class="h5 align-self-end mb-1">/Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-features text-start">
+                                <ul class="feature list-unstyled p-4 mb-0">
+                                    <li class="feature-list text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Full Access</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Enhanced Security</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Source Files</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>1 Domain Free</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Appointments</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-primary me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Installment</li>
+                                </ul>
+                                <div class=" p-4">
+                                    <a href="#" class="btn btn-pills rounded-pill btn-primary">Buy Now</a>                                        
+                                </div>
+                            </div>    
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="pricing bg-white text-center rounded-3 position-relative overflow-hidden shadow">
+                            <div class="price-header rounded-top p-4">
+                                <img src="imgs/success.svg" class="avatar avatar-xl-large" alt="">
+                                <h5 class="mt-3">Professional</h5>
+                                <p class="mb-0 text-muted">Suitable for Company</p>
+
+                                <ul class="nav nav-pills rounded-pill border-0 justify-content-center d-inline-block border py-1 px-2 mt-3 mb-0" id="ProfessionalTab" role="tablist">
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small " id="Professional-month-tab" data-bs-toggle="tab" data-bs-target="#Professional-month-tab-pane" type="button" role="tab" aria-controls="Professional-month-tab-pane" aria-selected="true" fdprocessedid="owvzu">Monthly</button>
+                                    </li>
+                                    <li class="nav-item d-inline-block" role="presentation">
+                                      <button class="nav-link px-3 rounded-pill py-1 small active" id="Professional-year-tab" data-bs-toggle="tab" data-bs-target="#Professional-year-tab-pane" type="button" role="tab" aria-controls="Professional-year-tab-pane" aria-selected="false" fdprocessedid="yt5dv" tabindex="-1">Yearly</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content bg-light p-4" id="ProfessionalTabContent">
+                                <div class="tab-pane fade " id="Professional-month-tab-pane" role="tabpanel" aria-labelledby="Professional-month-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">99.99</span>
+                                        <span class="h5 align-self-end mb-1">/Month</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show active" id="Professional-year-tab-pane" role="tabpanel" aria-labelledby="Professional-year-tab" tabindex="0">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h5 mb-0">$</span>
+                                        <span class="price h2 mb-0 ms-1">499.99</span>
+                                        <span class="h5 align-self-end mb-1">/Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-features text-start">
+                                <ul class="feature list-unstyled p-4 mb-0">
+                                    <li class="feature-list text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Full Access</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Enhanced Security</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Source Files</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>1 Domain Free</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Appointments</li>
+                                    <li class="feature-list text-muted mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle fea icon-sm text-dark me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>Free Installment</li>
+                                </ul>
+                                <div class=" p-4">
+                                    <a href="#" class="btn btn-pills rounded-pill btn-dark" >Subscribe Now</a>                                        
+                                </div>
+                            </div>    
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- end section plans and pricing -->
+
+
+        
+
+        <section class="mt-100 ">
+
+        </section>
+
+
+        </main>
+        
+        <!-- Footer Start -->
+        <footer class="bg-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <div class="row  ">
+                                <div class="col-lg-6">
+                                    <a href=""><img src="imgs/logo-light.png" alt=""></a>
+                                    <p class="text-foot mt-3 mb-0">Welcome to our digital marketing agency.</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 fot-take-hover">
+                                    <a href="mailto:contact@example.com" class="text-white text-decoration-none h5 mb-0 d-inline-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail fea icon-20 text-white me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@flipup.com</a>
+                                    <p class="text-foot mt-3 mb-0">Monday-Friday: 9AM-6PM</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 fot-take-hover">
+                                    <a href="tel:+152534-468-854" class="text-white text-decoration-none h5 mb-0 d-inline-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone fea icon-20 text-white me-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +152 534-468-854</a>
+                                    <p class="text-foot mt-3 mb-0">Call or SMS</p>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="py-4 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0 fw-medium">© 2024 Flipup. Design with <img width="25" height="25" src="https://img.icons8.com/neon/96/like.png" alt="like"/> by <a href="https://shreethemes.in/" target="_blank" class="text-reset text-decoration-none">Shreethemes</a>.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <ul class="list-unstyled social-icon foot-social-icon text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="https://1.envato.market/flipup"          target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart fea icon-sm align-middle" title="Buy Now"  ><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                <li class="list-inline-item"><a href="https://dribbble.com/shreethemes"        target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dribbble      fea icon-sm align-middle" title="dribbble" ><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg></a></li>
+                                <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin      fea icon-sm align-middle" title="Linkedin" ><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes"    target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook      fea icon-sm align-middle" title="facebook" ><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/"  target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram     fea icon-sm align-middle" title="instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                                <li class="list-inline-item"><a href="https://x.com/shreethemes"               target="_blank" class="px-2 py-2 rounded-pill" class="rounded-circle"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter       fea icon-sm align-middle" title="twitter"  ><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                            </ul><!--end icon-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" id="back-to-top" class="p-2 back-to-top rounded-circle  position-fixed bottom-0 end-0 mb-4 me-4 text-white-50  justify-content-center align-items-center "><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up fea icon-sm align-middle"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></a>
+        <!-- Back to top -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

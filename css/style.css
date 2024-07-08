@@ -1,0 +1,472 @@
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 800 */
+* {
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: "Syne", sans-serif;
+    --bs-secondary-color: rgba(33, 37, 41, 0.75);
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 17px;
+    color: #1e293b !important;
+}
+
+#home {
+    background-image: url(../imgs/home-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 170px;
+    text-align: left;
+    letter-spacing: 1px;
+
+}
+
+#topnav #navmenu-nav>li {
+    display: block;
+    position: relative;
+    margin: 0 5px;
+}
+
+
+#topnav {
+    transition: all 0.4s ease-in-out;
+
+}
+
+#topnav #navmenu-nav>li:nth-last-child(1),
+#topnav #navmenu-nav>li:nth-last-child(3),
+#topnav #navmenu-nav>li:nth-last-child(5) {
+    display: block;
+    position: relative;
+    margin: 0 15px;
+}
+
+.btn {
+    padding: 7px 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 13px;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.3s;
+    /* border-radius: 6px; */
+    text-transform: uppercase;
+    color: #fff !important;
+}
+
+header #navmenu-nav>li:hover a {
+    color: #ea580c !important;
+}
+
+#topnav .btn,
+#feature .btn,
+#home .btn,
+.back-to-top {
+    background-color: #ea580c !important;
+    border: 1px solid #ea580c !important;
+    color: #fff !important;
+}
+
+.back-to-top {
+    display: none;
+
+}
+
+#topnav #navmenu-nav>li>a {
+    display: block;
+    color: #1e293b;
+    font-size: 12.5px;
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+#home h1 {
+    font-weight: 600 !important;
+    font-size: 48px !important;
+    line-height: 1.5;
+    font-family: "Syne", sans-serif;
+}
+
+#home a:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+}
+
+.typewrite {
+    display: inline-block;
+}
+
+.translate-rotate-middle {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.z-n1 {
+    z-index: -1;
+}
+
+#home h1 span {
+    font-weight: 600 !important;
+    font-size: 48px !important;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #ea580c 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+#home .title-heading p {
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #94a3b8 !important;
+}
+
+#home .spin-div {
+    height: 65px;
+    width: 65px;
+    background-color: #ea580c !important;
+    animation: spinner-animation 5s linear infinite;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+#home .sec-statistics-bg {
+    background-color: #FEF6F3;
+}
+
+#home .sec-statistics-bg h2 {
+    line-height: 1.5;
+    font-weight: 600 !important;
+    font-size: 40px !important;
+    color: black;
+
+}
+
+#home .sec-statistics-bg h6 {
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+
+}
+
+#home h1 .image-decoration {
+    transform: rotateZ(-45deg);
+    width: 35px;
+    height: 29px !important;
+    left: -15px !important;
+    top: -5px !important;
+}
+
+#home .bi-chevron-right::after {
+    display: inline-block;
+    font: normal normal normal 24px / 1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */
+}
+
+#home .bi-chevron-right {
+    font-weight: 800;
+    color: #fff !important;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#home .title-heading  span {
+    letter-spacing: 0px !important;
+
+}
+
+#feature .section-title .title {
+    letter-spacing: 0.5px;
+    font-size: 28px !important;
+    color: var(--bs-heading-color);
+    line-height: 1.5;
+    font-weight: 600 !important;
+}
+
+.text-muted{
+    color: #94a3b8 !important;
+}
+
+#feature .para-desc {
+    /* max-width: 600px; */
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #94a3b8 !important;
+}
+
+.services .service-icon {
+    transition: all 0.5s ease;
+}
+
+.fea.icon-lg {
+    height: 42px;
+    width: 42px;
+    stroke-width: 1;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+#home .fa-solid.fa-chevron-right {
+    font-size: 7px;
+    padding-left: 7px;
+
+
+}
+
+.fa-solid.fa-chevron-right {
+    font-size: 9px;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+    padding-left: 4px;
+}
+
+.services.primary.active-service {
+    background-color: #ea580c !important;
+    transform: rotate(-4deg);
+    color: rgb(255, 255, 255);
+}
+
+#feature .theCard,
+.owl-carousel img,
+#pricing .pricing,
+.owl-carousel .item > div {
+    box-shadow: 0 0 3px rgba(30, 41, 59, 0.15) !important;
+    transition: all 0.5s ease;
+}
+
+#feature .theCard .service-big-icon {
+    z-index: -1;
+}
+
+#feature .theCard:hover .service-big-icon,
+#feature .theStaticCard:hover .service-big-icon {
+    height: 200px !important;
+    width: 200px !important;
+    opacity: 0.05 !important;
+}
+
+#feature .theCard:hover {
+    transform: rotate(-4deg);
+}
+
+#feature .content .para1 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#feature .content .para,
+#pricing .feature li,
+#feature .section-title li,
+#pricing .section-title .para-desc {
+    color: #94a3b8 !important;
+}
+
+#feature .content .link {
+    color: #d24f0b !important;
+}
+
+#feature .services h5 {
+    font-size: 18px !important;
+    font-family: "Syne", sans-serif;
+    line-height: 1.5;
+    font-weight: 600 !important;
+}
+
+.fa-regular.fa-circle-check{
+    color: #ea580c !important;
+    /* letter-spacing: 1px; */
+
+
+}
+
+
+
+
+.btn-primary {
+    background-color: #ea580c ;
+    border: 1px solid #ea580c !important;
+    color: #fff !important;
+}
+
+.bi.bi-arrow-right-short {
+    font-size: 13px !important;
+}
+
+
+.owl-dots button span {
+    width: 4px !important;
+    height: 4px !important;;
+    background: rgba(30, 41, 59, 0.15);
+    border: 2px solid rgba(30, 41, 59, 0.15) !important;
+    border-radius: 50%;
+    margin: 4px;
+    padding: 0;
+    transition: all 0.2s ease;
+
+}
+
+.owl-dots button.active span {
+    padding: 2px;
+    /* border-color: #ea580c !important; */
+    background-color: #ea580c !important;
+    transition: all 0.2s ease;
+}
+
+.avatar.avatar-small {
+    width: 65px !important;
+}
+
+.bi.bi-quote ,
+#pricing #with-banar .feather-arrow-right-circle{
+    color: #ea580c !important;
+}
+
+#pricing .section-title h4 {
+    letter-spacing: 0.5px;
+    font-size: 28px !important;
+}
+
+.para-desc {
+    max-width: 600px;
+}
+
+#pricing button {
+    color: #495057 !important;
+}
+
+#pricing button.active {
+    background-color:  #ea580c;
+    color: #fff !important;
+}
+
+#pricing #with-banar #banar {
+    background-color: #ea580c !important;
+}
+
+#pricing .nav.nav-pills {
+    background-color: #F4F6FA;
+}
+
+.avatar.avatar-xl-large {
+    height: 180px;
+    width: 180px;
+}
+
+.fea.icon-sm {
+    height: 16px;
+    width: 16px;
+}
+
+#pricing .pricing .btn-primary:hover {
+    background-color: #ea580c !important;
+}
+
+#pricing .pricing .btn-dark:hover {
+    background-color: #1E293B !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer ul svg {
+    width: 16px;
+    height: 16px;
+    color: #adb5bd;
+    font-size: 17px !important;
+    line-height: 1.5;
+    font-weight: 400;
+    stroke-width: 1.5;
+
+}
+
+footer ul a {
+    border: 1px solid #1e293b;
+    color: #adb5bd;
+    border-color: #283353;
+}
+
+footer ul a:hover {
+    background-color: #ea580c;
+    border-color: #d24f0b !important;
+    color: #fff !important;
+}
+
+footer .fot-take-hover a:hover {
+    color: #ea580c !important;
+
+}
+
+footer {
+    position: relative;
+    color: #adb5bd;
+    background-color: #202942 !important;
+}
+
+@keyframes spinner-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
