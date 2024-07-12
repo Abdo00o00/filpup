@@ -1,5 +1,10 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 400 to 800 */
+
+/*  */
+/*  */
+/*  */
+/* ################################################# start main// class  */
 * {
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
@@ -18,15 +23,108 @@ body {
     color: #1e293b !important;
 }
 
-#home {
-    background-image: url(../imgs/home-shape.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 170px;
-    text-align: left;
+.btn {
+    padding: 7px 20px;
     letter-spacing: 1px;
-
+    font-weight: 600;
+    font-size: 13px;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.3s;
+    /* border-radius: 6px; */
+    text-transform: uppercase;
+    color: #fff !important;
 }
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.z-n1 {
+    z-index: -1;
+}
+
+.text-muted{
+    color: #94a3b8 !important;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.btn-primary {
+    background-color: #ea580c ;
+    border: 1px solid #ea580c !important;
+    color: #fff !important;
+}
+
+.para-desc {
+    max-width: 600px;
+}
+
+.fea.icon-sm {
+    height: 16px;
+    width: 16px;
+}
+
+.typewrite {
+    display: inline-block;
+}
+
+#topnav .btn,
+#feature .btn,
+#home .btn,
+#blog .badge,
+.back-to-top {
+    background-color: #ea580c !important;
+    border: 1px solid #ea580c !important;
+    color: #fff !important;
+}
+
+
+#feature .content .para,
+#pricing .feature li,
+#feature .section-title li,
+/* #blog p , */
+#pricing .section-title .para-desc {
+    color: #94a3b8 !important;
+}
+
+#feature .theCard,
+.owl-carousel img,
+#pricing .pricing,
+.owl-carousel .item > div,
+#contact.take-shadow,
+#blog .position-relative {
+    box-shadow: 0 0 3px rgba(30, 41, 59, 0.15) !important;
+    transition: all 0.5s ease;
+}
+
+.fa-solid.fa-chevron-right {
+    font-size: 9px;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+    padding-left: 4px;
+}
+
+/* ################################################# end main// class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start header // navbar class  */
 
 #topnav #navmenu-nav>li {
     display: block;
@@ -34,6 +132,13 @@ body {
     margin: 0 5px;
 }
 
+#topnav #navmenu-nav{
+    display: flex;
+}
+
+#topnav .menu-extras {
+    display: none;
+}
 
 #topnav {
     transition: all 0.4s ease-in-out;
@@ -48,35 +153,8 @@ body {
     margin: 0 15px;
 }
 
-.btn {
-    padding: 7px 20px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 13px;
-    outline: none;
-    text-decoration: none;
-    transition: all 0.3s;
-    /* border-radius: 6px; */
-    text-transform: uppercase;
-    color: #fff !important;
-}
-
 header #navmenu-nav>li:hover a {
     color: #ea580c !important;
-}
-
-#topnav .btn,
-#feature .btn,
-#home .btn,
-.back-to-top {
-    background-color: #ea580c !important;
-    border: 1px solid #ea580c !important;
-    color: #fff !important;
-}
-
-.back-to-top {
-    display: none;
-
 }
 
 #topnav #navmenu-nav>li>a {
@@ -93,6 +171,54 @@ header #navmenu-nav>li:hover a {
     padding-right: 10px;
     text-decoration: none;
 }
+ 
+header #navmenu-nav .active {
+    color: #ea580c !important;
+}
+#topnav .navbar-toggle .lines {
+    width: 25px;
+    display: block;
+    height: 18px;
+}
+#isToggle  {
+    cursor: pointer;
+}
+
+/* #isToggle span {
+    width: 25px;
+    height : 2px;
+    display: block;
+    background-color: #1e293b;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin: 5px;
+}
+
+#isToggle span:nth-child(2){
+    display: none;
+    top:6px;
+}
+
+#isToggle span:nth-child(1){
+    transform: rotateZ(-45deg);
+    top:0px;
+}
+#isToggle span:nth-child(3){
+    transform: rotateZ(45deg);
+    top:12px;
+
+} */
+
+
+
+ul.hidden-menu li:hover a{
+    background-color: #ea580c !important;
+}
+/* ################################################# end header //the first section// navbar class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start section home //the second section// image and the h1 grow your business class  */
 
 #home h1 {
     font-weight: 600 !important;
@@ -109,16 +235,8 @@ header #navmenu-nav>li:hover a {
 
 }
 
-.typewrite {
-    display: inline-block;
-}
-
 .translate-rotate-middle {
     transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.z-n1 {
-    z-index: -1;
 }
 
 #home h1 span {
@@ -146,12 +264,14 @@ header #navmenu-nav>li:hover a {
     animation: spinner-animation 5s linear infinite;
 }
 
-.mt-100 {
-    margin-top: 100px;
-}
+#home {
+    background-image: url(../imgs/home-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 170px;
+    text-align: left;
+    letter-spacing: 1px;
 
-.mt-60 {
-    margin-top: 60px;
 }
 
 #home .sec-statistics-bg {
@@ -205,16 +325,25 @@ header #navmenu-nav>li:hover a {
 
 }
 
+#home .fa-solid.fa-chevron-right {
+    font-size: 7px;
+    padding-left: 7px;
+
+
+}
+
+/* ################################################# end section home //the second section// image and the h1 grow your business class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start section feature //the third section// section cards and carousel class  */
+
 #feature .section-title .title {
     letter-spacing: 0.5px;
     font-size: 28px !important;
     color: var(--bs-heading-color);
     line-height: 1.5;
     font-weight: 600 !important;
-}
-
-.text-muted{
-    color: #94a3b8 !important;
 }
 
 #feature .para-desc {
@@ -235,41 +364,10 @@ header #navmenu-nav>li:hover a {
     stroke-width: 1;
 }
 
-.pt-100 {
-    padding-top: 100px;
-}
-
-.py-100 {
-    padding: 100px 0;
-}
-
-#home .fa-solid.fa-chevron-right {
-    font-size: 7px;
-    padding-left: 7px;
-
-
-}
-
-.fa-solid.fa-chevron-right {
-    font-size: 9px;
-    letter-spacing: 3px !important;
-    text-transform: uppercase;
-    font-weight: 900 !important;
-    padding-left: 4px;
-}
-
 .services.primary.active-service {
     background-color: #ea580c !important;
     transform: rotate(-4deg);
     color: rgb(255, 255, 255);
-}
-
-#feature .theCard,
-.owl-carousel img,
-#pricing .pricing,
-.owl-carousel .item > div {
-    box-shadow: 0 0 3px rgba(30, 41, 59, 0.15) !important;
-    transition: all 0.5s ease;
 }
 
 #feature .theCard .service-big-icon {
@@ -291,13 +389,6 @@ header #navmenu-nav>li:hover a {
     color: rgba(255, 255, 255, 0.5) !important;
 }
 
-#feature .content .para,
-#pricing .feature li,
-#feature .section-title li,
-#pricing .section-title .para-desc {
-    color: #94a3b8 !important;
-}
-
 #feature .content .link {
     color: #d24f0b !important;
 }
@@ -309,26 +400,13 @@ header #navmenu-nav>li:hover a {
     font-weight: 600 !important;
 }
 
-.fa-regular.fa-circle-check{
+.fa-regular.fa-circle-check {
     color: #ea580c !important;
-    /* letter-spacing: 1px; */
-
-
-}
-
-
-
-
-.btn-primary {
-    background-color: #ea580c ;
-    border: 1px solid #ea580c !important;
-    color: #fff !important;
 }
 
 .bi.bi-arrow-right-short {
     font-size: 13px !important;
 }
-
 
 .owl-dots button span {
     width: 4px !important;
@@ -353,18 +431,20 @@ header #navmenu-nav>li:hover a {
     width: 65px !important;
 }
 
+/* ################################################# end section feature //the third section// section cards and carousel class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start section pricing //the fourth section// section plans and pricing class  */
+
 .bi.bi-quote ,
-#pricing #with-banar .feather-arrow-right-circle{
+#pricing #with-banar .feather-arrow-right-circle {
     color: #ea580c !important;
 }
 
 #pricing .section-title h4 {
     letter-spacing: 0.5px;
     font-size: 28px !important;
-}
-
-.para-desc {
-    max-width: 600px;
 }
 
 #pricing button {
@@ -389,10 +469,6 @@ header #navmenu-nav>li:hover a {
     width: 180px;
 }
 
-.fea.icon-sm {
-    height: 16px;
-    width: 16px;
-}
 
 #pricing .pricing .btn-primary:hover {
     background-color: #ea580c !important;
@@ -402,28 +478,61 @@ header #navmenu-nav>li:hover a {
     background-color: #1E293B !important;
 }
 
+/* ################################################# end section pricing //the fourth section// section plans and pricing class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start section blog //the fifth section// section blog and news class  */
+
+#blog .section-title h4 {
+    letter-spacing: 0.5px;
+    font-size: 28px !important;
+    line-height: 1.5;
+    font-weight: 600 !important;
+}
+
+#blog .link-title, 
+#blog i {
+    transition: all 0s ease;
+}
+
+#blog .h5 {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+}
+
+#blog .link-title:hover {
+    
+    color: #ea580c !important;
+}
+
+/* ################################################# end section blog //the fifth section// section blog and news class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start section blog //th6 section// section contact and user info class  */
+
+#contact h4 {
+    font-size: 24px !important;
+    line-height: 1.5;
+    font-weight: 600 !important;
+}
+
+#contact .form-label {
+    font-size: 15px !important;
+}
+
+#contact form #submit:hover {
+    background-color: #ea580c !important;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ################################################# end section blog //th6 section// section contact and user info class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start footer /the last section/ icons and info class  */
 
 
 footer ul svg {
@@ -460,6 +569,12 @@ footer {
     background-color: #202942 !important;
 }
 
+/* ################################################# end footer /the last section/ icons and info class  */
+/*  */
+/*  */
+/*  */
+/* ################################################# start animation for spinner div */
+
 @keyframes spinner-animation {
     0% {
         transform: rotate(0deg);
@@ -470,3 +585,7 @@ footer {
     }
 
 }
+
+/* ################################################# start animation for spinner div */
+/*  */
+/*  */
