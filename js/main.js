@@ -18,63 +18,87 @@ $(document).ready(function() {
         }        
     }
 
+    // function toBigSmallNav() { 
+    //     if ($('body , html').outerWidth() < 1000) {
+    //         $("#topnav ").css("backgroundColor","white")                 
+    //         $("#topnav .menu-extras").css("display","flex");
+    //         $("#topnav #navmenu-nav").css("display","none");
+    //         $("ul.appended-menu").css("display","flex");
+            
+    //         // console.log("small nav");
+    //     } else {
+    //         $("#topnav ").css("backgroundColor","transparent")
+    //         $("#topnav .menu-extras").css("display","none");
+    //         $("ul.appended-menu").css("display","none");
+    //         $("#topnav #navmenu-nav").css("display","flex");
+
+    //         // console.log("big nav");
+
+    //     }
+    //     // console.log("body width", $('body , html').outerWidth());
+    // }
+
     function toBigSmallNav() { 
-        if ($('body , html').outerWidth() < 1000) {
-            $("#topnav ").css("backgroundColor","white")                 
-            $("#topnav .menu-extras").css("display","flex");
-            $("#topnav #navmenu-nav").css("display","none");
-            $("ul.appended-menu").css("display","flex");
+        if ($('body, html').outerWidth() < 1000) {
+            $("#topnav").css("backgroundColor", "white");
+            
+            $("#topnav .menu-extras").fadeIn(); // إظهار قائمة "menu-extras" بسلاسة
+            $("#topnav #navmenu-nav").fadeOut(); // إخفاء قائمة "navmenu-nav" بسلاسة
+            $("ul.appended-menu").fadeIn(); // إظهار القائمة المضافة بسلاسة
             
             // console.log("small nav");
         } else {
-            $("#topnav ").css("backgroundColor","transparent")
-            $("#topnav .menu-extras").css("display","none");
-            $("ul.appended-menu").css("display","none");
-            $("#topnav #navmenu-nav").css("display","flex");
-
+            $("#topnav").css("backgroundColor", "transparent");
+            
+            $("#topnav .menu-extras").fadeOut(); // إخفاء قائمة "menu-extras" بسلاسة
+            $("ul.appended-menu").fadeOut(); // إخفاء القائمة المضافة بسلاسة
+            $("#topnav #navmenu-nav").fadeIn(); // إظهار قائمة "navmenu-nav" بسلاسة
+            
             // console.log("big nav");
-
         }
-        // console.log("body width", $('body , html').outerWidth());
+        // console.log("body width", $('body, html').outerWidth());
     }
+    
 
-    function toggleMenu() { 
+
+    function toggleMenu() {
         $('#isToggle').click(function() {
             let menuIcon = $(this).find('i');
     
             // Toggle the menu icon
             if (menuIcon.hasClass('bi-list')) {
                 menuIcon.removeClass('bi-list').addClass('bi-x-lg');
-                // menuIcon.toggleClass('bi-x-lg');
-                $("#topnav #headerContainer").append(`
-                    <ul class="list-group list-group-flush list-unstyled appended-menu">
-                        <li class="nav-item list-group-item bg-white">
+    
+                // Append the menu with slide down effect
+                $("#topnav").append(`
+                    <ul class="list-group list-group-flush list-unstyled appended-menu border-top-0 border-end-0 border-start-0">
+                        <li class="nav-item list-group-item border-0">
                             <a href="#home" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item list-group-item">
+                        <li class="nav-item list-group-item border-0">
                             <a href="#feature" class="nav-link">Features</a>
                         </li>
-                        <li class="nav-item list-group-item">
+                        <li class="nav-item list-group-item border-0">
                             <a href="#pricing" class="nav-link">Pricing</a>
                         </li>
-                        <li class="nav-item list-group-item">
+                        <li class="nav-item list-group-item border-0">
                             <a href="#blog" class="nav-link">Blog & News</a>
                         </li>
-                        <li class="nav-item list-group-item">
+                        <li class="nav-item list-group-item border-0">
                             <a href="#contact" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                 `);
+                $("#topnav ul.appended-menu").slideToggle(300);
                 console.log("added menu");
             } else {
                 menuIcon.removeClass('bi-x-lg').addClass('bi-list');
-                // menuIcon.toggleClass('bi-list');
-
-                $("#topnav #headerContainer ul.appended-menu").remove();
+                
+                $("#topnav ul.appended-menu").slideToggle(400 , function() {
+                    $(this).remove();
+                });
                 console.log("removed menu");
-
             }
-    
         });
     }
 
@@ -94,9 +118,9 @@ $(document).ready(function() {
     const element = document.getElementById('element');
     applyGradientToText(element);
 
-    $("#flip").click(function(){
-          $("#panel").slideUp("slow");
-    }); // end 
+    // $("#flip").click(function(){
+    //       $("#panel").slideUp("slow");
+    // }); // end 
 
     // color gradient for h1 text
     function applyGradientToText(element) {
@@ -166,8 +190,8 @@ $(document).ready(function() {
 
     $(window).resize( function() {
         toBigSmallNav();
-    }
-    );
+    }    );
+    
     $(window).scroll(function(){
         // console.log($(window).scrollTop());
         myScroll();

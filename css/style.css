@@ -48,7 +48,7 @@ body {
     z-index: -1;
 }
 
-.text-muted{
+.text-muted {
     color: #94a3b8 !important;
 }
 
@@ -60,12 +60,12 @@ body {
     padding: 100px 0;
 }
 
-.mb-100{
+.mb-100 {
     margin-bottom: 100px;
 }
 
 .btn-primary {
-    background-color: #ea580c ;
+    background-color: #ea580c;
     border: 1px solid #ea580c !important;
     color: #fff !important;
 }
@@ -105,8 +105,9 @@ body {
 #feature .theCard,
 .owl-carousel img,
 #pricing .pricing,
-.owl-carousel .item > div,
+.owl-carousel .item>div,
 #contact.take-shadow,
+header .appended-menu,
 #blog .position-relative {
     box-shadow: 0 0 3px rgba(30, 41, 59, 0.15) !important;
     transition: all 0.5s ease;
@@ -132,7 +133,7 @@ body {
     margin: 0 5px;
 }
 
-#topnav #navmenu-nav{
+#topnav #navmenu-nav {
     display: flex;
 }
 
@@ -171,16 +172,18 @@ header #navmenu-nav>li:hover a {
     padding-right: 10px;
     text-decoration: none;
 }
- 
+
 header #navmenu-nav .active {
     color: #ea580c !important;
 }
+
 #topnav .navbar-toggle .lines {
     width: 25px;
     display: block;
     height: 18px;
 }
-#isToggle  {
+
+#isToggle {
     cursor: pointer;
 }
 
@@ -211,9 +214,15 @@ header #navmenu-nav .active {
 
 
 
-ul.hidden-menu li:hover a{
-    background-color: #ea580c !important;
+header .appended-menu li:hover a {
+    color: #ea580c !important;
 }
+
+header .appended-menu {
+    width: 100% !important;
+    display: none;
+}
+
 /* ################################################# end header //the first section// navbar class  */
 /*  */
 /*  */
@@ -320,7 +329,7 @@ ul.hidden-menu li:hover a{
     font-weight: 900;
 }
 
-#home .title-heading  span {
+#home .title-heading span {
     letter-spacing: 0px !important;
 
 }
@@ -410,7 +419,8 @@ ul.hidden-menu li:hover a{
 
 .owl-dots button span {
     width: 4px !important;
-    height: 4px !important;;
+    height: 4px !important;
+    ;
     background: rgba(30, 41, 59, 0.15);
     border: 2px solid rgba(30, 41, 59, 0.15) !important;
     border-radius: 50%;
@@ -437,7 +447,7 @@ ul.hidden-menu li:hover a{
 /*  */
 /* ################################################# start section pricing //the fourth section// section plans and pricing class  */
 
-.bi.bi-quote ,
+.bi.bi-quote,
 #pricing #with-banar .feather-arrow-right-circle {
     color: #ea580c !important;
 }
@@ -452,7 +462,7 @@ ul.hidden-menu li:hover a{
 }
 
 #pricing button.active {
-    background-color:  #ea580c;
+    background-color: #ea580c;
     color: #fff !important;
 }
 
@@ -491,7 +501,7 @@ ul.hidden-menu li:hover a{
     font-weight: 600 !important;
 }
 
-#blog .link-title, 
+#blog .link-title,
 #blog i {
     transition: all 0s ease;
 }
@@ -503,7 +513,7 @@ ul.hidden-menu li:hover a{
 }
 
 #blog .link-title:hover {
-    
+
     color: #ea580c !important;
 }
 
@@ -569,11 +579,19 @@ footer {
     background-color: #202942 !important;
 }
 
+footer .footer-bar {
+    border-top: 1px solid #252f4c;
+}
+
+footer .take-media ul {
+    justify-content: end;
+}
+
 /* ################################################# end footer /the last section/ icons and info class  */
 /*  */
 /*  */
 /*  */
-/* ################################################# start animation for spinner div */
+/* ################################################# start animations code with keyframes */
 
 @keyframes spinner-animation {
     0% {
@@ -589,3 +607,26 @@ footer {
 /* ################################################# start animation for spinner div */
 /*  */
 /*  */
+/*  */
+/* ################################################# start responsive code with media query*/
+
+/* @media screen and (max-width: 991px) {
+    header .header {
+      background-color: #ffffff;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    header .header {  
+      background-color: #ffffff;
+    }
+  }  */
+
+@media screen and (max-width: 575px) {
+    footer .take-media {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+
+    }
+}
