@@ -18,25 +18,7 @@ $(document).ready(function() {
         }        
     }
 
-    // function toBigSmallNav() { 
-    //     if ($('body , html').outerWidth() < 1000) {
-    //         $("#topnav ").css("backgroundColor","white")                 
-    //         $("#topnav .menu-extras").css("display","flex");
-    //         $("#topnav #navmenu-nav").css("display","none");
-    //         $("ul.appended-menu").css("display","flex");
-            
-    //         // console.log("small nav");
-    //     } else {
-    //         $("#topnav ").css("backgroundColor","transparent")
-    //         $("#topnav .menu-extras").css("display","none");
-    //         $("ul.appended-menu").css("display","none");
-    //         $("#topnav #navmenu-nav").css("display","flex");
-
-    //         // console.log("big nav");
-
-    //     }
-    //     // console.log("body width", $('body , html').outerWidth());
-    // }
+ 
 
     function toBigSmallNav() { 
         if ($('body, html').outerWidth() < 1000) {
@@ -153,20 +135,6 @@ $(document).ready(function() {
     $(".owl-carousel").owlCarousel();
 
     
-    // function countUp(limit) {
-    //     let count = 0;
-
-    //     const interval = setInterval(() => {
-    //         $('.counter-value').text(count);
-
-    //         if (count === limit) {
-    //             clearInterval(interval);
-    //             console.log("Count up finished!");
-    //         }
-
-    //         count++;
-    //     }, 10);
-    // }
 
 
     function countUp(element, limit) {
