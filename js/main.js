@@ -171,4 +171,9 @@ $(document).ready(function() {
 
 
 
+
+    //improving the Accessibility by gave name to buttons
+    $('.owl-carousel button').attr('aria-label', 'Slide');
+
+
 });    
