@@ -1,4 +1,4 @@
-/* <uniquifier>: Use a unique and descriptive class name */
+/* <uniquifier>: Use unique and descriptive class name */
 /* <weight>: Use a value from 400 to 800 */
 
 /*  */
@@ -295,7 +295,7 @@ header .appended-menu {
 
 }
 
-#home .sec-statistics-bg h6 {
+#home .sec-statistics-bg p {
     color: #94a3b8 !important;
     font-weight: 500 !important;
     font-size: 17px !important;
